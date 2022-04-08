@@ -1,9 +1,9 @@
 package za.ac.cput.entity;
 /*
-User.java
+UserRole.java
 This class implement builder pattern for UserRole
-Siphelele Nyathi 218334028
-O4.04.2022
+Author: Siphelele Nyathi 218334028
+Date: O4.04.2022
  */
 
 public class UserRole {
@@ -35,8 +35,8 @@ public class UserRole {
     public String toString() {
 
         return "UserRole{" +
-                "roleId='" + roleId + '\'' +
-                ", roleType='" + roleType + '\'' +
+                " Unique Id = '" + roleId + '\'' +
+                ", Role Type = '" + roleType + '\'' +
                 '}';
     }
 

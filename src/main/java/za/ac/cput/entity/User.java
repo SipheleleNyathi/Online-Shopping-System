@@ -2,8 +2,8 @@ package za.ac.cput.entity;
 /*
 User.java
 This class implement builder pattern for User
-Siphelele Nyathi 218334028
-O4.04.2022
+Author: Siphelele Nyathi 218334028
+Date: O4.04.2022
  */
 public class User {
 
@@ -66,11 +66,11 @@ public class User {
     public String toString() {
 
         return "User{" +
-                "userId='" + userId + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", address='" + address + '\'' +
+                "User Id = '" + userId + '\'' +
+                ", Name = '" + name + '\'' +
+                ", Email = '" + email + '\'' +
+                ", Password = '" + password + '\'' +
+                ", Address = '" + address + '\'' +
                 '}';
     }
 
