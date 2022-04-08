@@ -6,28 +6,24 @@ Author: Siphelele Nyathi 218334028
 Date: O4.04.2022
  */
 import za.ac.cput.entity.User;
-import java.util.UUID;
-import java.util.regex.Pattern;
+import za.ac.cput.util.GenericHelper;
 
 public class UserFactory {
 
-    public static boolean patternMatches(String emailAddress, String regexPattern) {
-        return Pattern.compile(regexPattern)
-                .matcher(emailAddress)
-                .matches();
-    }
 
     public static User createUser(String name, String email, String password, String address) {
 
-        String uniqueId = UUID.randomUUID().toString();
 
-        if (!UserFactory.patternMatches(email, "^(.+)@(\\\\S+)$"))
+        if (GenericHelper.emailMatches(email, "^(.+)@(\\\\S+)$"))
             return null;
 
-        if(name.isEmpty() || password.isEmpty() || address.isEmpty())
+        if(GenericHelper.isNullorEmpty(name) ||
+                GenericHelper.isNullorEmpty(password) ||
+                GenericHelper.isNullorEmpty(address)
+          )
                 return null;
 
-                return new User.Builder().setUserId(uniqueId)
+                return new User.Builder().setUserId(GenericHelper.generateId())
                         .setName(name)
                         .setEmail(email)
                         .setAddress(address)
