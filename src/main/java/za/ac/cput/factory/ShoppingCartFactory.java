@@ -1,10 +1,14 @@
+/*
+ * Online-Shopping-System
+ * Tshepang Molefe
+ * 216217717
+ * 10/04/2022
+ */
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Shipment;
 import za.ac.cput.entity.ShoppingCart;
 import za.ac.cput.util.GenericHelper;
 
-import java.util.UUID;
 
 public class ShoppingCartFactory
     {
@@ -18,7 +22,7 @@ public class ShoppingCartFactory
 
 
         return new ShoppingCart.Builder().setCartId(cartId).setProductId(productId).setQuantity(quantity).setDateAdded(dateAdded)
-                .Builder();
+                .builder();
     }
     }
 
