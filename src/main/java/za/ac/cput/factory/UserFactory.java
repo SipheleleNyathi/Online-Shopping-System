@@ -5,12 +5,9 @@ Factory class for User
 Author: Siphelele Nyathi 218334028
 Date: O4.04.2022
  */
-
 import za.ac.cput.entity.User;
-import za.ac.cput.util.Helper;
-
+import za.ac.cput.util.GenericHelper;
 import java.util.UUID;
-
 
 public class UserFactory {
 
@@ -18,9 +15,9 @@ public class UserFactory {
 
         String uniqueId = UUID.randomUUID().toString();
 
-        if (Helper.isValidUserEmail(email, "^(.+)@(\\\\S+)$"))
+        if (GenericHelper.isValidUserEmail(email, "^(.+)@(\\\\S+)$"))
 
-        if(Helper.isNull(name) || Helper.isNull(password) || Helper.isNull(address))
+        if(name.isEmpty() || password.isEmpty() || address.isEmpty())
                 return null;
 
                 return new User.Builder().setUserId(uniqueId)
