@@ -17,7 +17,7 @@ public class ShipmentFactory
     public static Shipment createShipment(String shipmentId, int shipmentCost, String customerName, String deliveryAddress, int contactNumber, int trackingNumber, String shipmentDate, String shipmentTime) {
 
 
-        if (GenericHelper.isNullorEmpty(shipmentId) || GenericHelper.isNullorEmpty(shipmentId))
+        if (GenericHelper.isNullorEmpty(shipmentId))
             return null;
 
 

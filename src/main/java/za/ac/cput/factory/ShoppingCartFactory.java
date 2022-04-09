@@ -17,7 +17,7 @@ public class ShoppingCartFactory
         public static ShoppingCart createShoppingCart (String cartId,int productId, int quantity, String dateAdded){
 
 
-        if (GenericHelper.isNullorEmpty(cartId) || GenericHelper.isNullorEmpty(cartId))
+        if (GenericHelper.isNullorEmpty(cartId))
             return null;
 
 
