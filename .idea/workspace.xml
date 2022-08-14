@@ -5,35 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7078e445-0467-4d72-b14a-9e0b247444ab" name="Changes" comment="Repository classes annotated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/service/impl/CategoryServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/service/impl/ProductServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/RoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/IService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/GenericHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/util/GenericHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/entity/Account$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/entity/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/entity/Payment$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/entity/Region$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/entity/Region.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/factory/AccountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/factory/AccountFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/factory/RegionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/factory/RegionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/factory/UserFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/repository/AccountRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/repository/IRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/repository/RegionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/util/GenericHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/entity/AccountTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/entity/RegionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/factory/AccountFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/factory/RegionFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/factory/UserFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/service/impl/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/service/impl/UserServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -60,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="219466912" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,12 +67,10 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -247,6 +222,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Account and Region factory classes created and TDD was used" />

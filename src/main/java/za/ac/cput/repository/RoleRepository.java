@@ -11,5 +11,5 @@ import za.ac.cput.domain.User;
 import java.util.Set;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, String> {
+public interface RoleRepository extends JpaRepository<User, String> {
 }
