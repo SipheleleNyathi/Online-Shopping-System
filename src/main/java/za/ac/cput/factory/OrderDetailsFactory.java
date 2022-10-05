@@ -17,7 +17,7 @@ public class OrderDetailsFactory
 {
 
 
-    public static OrderDetails createOrderDetails(int quantity, String unitCost, String subTotal, int orderDetailID, Product product) {
+    public static OrderDetails createOrderDetails(int quantity, String unitCost, String subTotal, int orderDetailID, int productID,String productName) {
         if (GenericHelper.isNullorEmpty(String.valueOf(quantity))|| GenericHelper.isNullorEmpty(unitCost)
                 || GenericHelper.isNullorEmpty(subTotal) )
             return null;
@@ -25,7 +25,8 @@ public class OrderDetailsFactory
         //
         return new OrderDetails.Builder()
                 .setOrderDetailID(String.valueOf(orderDetailID))
-                .setProductID(product)
+                .setProductID(productID)
+                .setProductName(productName)
                 .setQuantity(String.valueOf(quantity))
                 .setUniCost(unitCost)
                 .setSubTotal(subTotal)

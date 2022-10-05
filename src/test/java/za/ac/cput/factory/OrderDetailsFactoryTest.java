@@ -27,13 +27,13 @@ class OrderDetailsFactoryTest
     @Test
     public void CreateOrder()
     {
-        Order order = OrderFactory.createOrder("1","12/08/2022","on the way",
-                "Edvalter","Cape town", Integer.parseInt("877888333"));
+        //Order order = OrderFactory.createOrder("1","12/08/2022","on the way",
+          //      "Edvalter","Cape town", Integer.parseInt("877888333"));
 
-        Product product = ProductFactory.createProduct("Rice","EC","R123");
+        //Product product = ProductFactory.createProduct("Rice","EC","R123");
 
         OrderDetails orderDetails=OrderDetailsFactory.createOrderDetails(
-                Integer.parseInt("5"), "R78","R78", Integer.parseInt("1"),product);
+                Integer.parseInt("5"), "R78","R78", Integer.parseInt("1"), Integer.parseInt("1"),"Rice");
         System.out.println(orderDetails.toString());
         assertNotNull(orderDetails);
     }

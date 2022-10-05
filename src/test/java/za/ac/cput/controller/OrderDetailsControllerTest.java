@@ -47,7 +47,8 @@ class OrderDetailsControllerTest {
         this.product = ProductFactory.createProduct("rice","R","R12");
 
         this.order = OrderDetailsFactory.createOrderDetails(Integer.parseInt("1"),"R12","R12",Integer.parseInt("1")
-        ,product);
+        , Integer.parseInt("1"),"Rice");
+
         this.baseUrl = "http://localhost:" + this.port + "/online-shopping-system/orderDetails/";
     }
 

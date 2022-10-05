@@ -23,9 +23,12 @@ public class OrderDetails implements Serializable
     @Id
     private int orderDetailID;
 
+    //I changed, instead of using attributes from products table I made my own
+    @NotNull
+    private int productID;
 
     @NotNull
-    private Product productID,productName;
+    private String productName;
 
     @NotNull
     private int quantity;
@@ -42,7 +45,7 @@ public class OrderDetails implements Serializable
     private OrderDetails(Builder builder){
         this.orderDetailID = builder.orderDetailID;
         this.productID = builder.productID;
-        this.productName = builder.productID;
+        this.productName = builder.productName;
         this.quantity=builder.quantity;
         this.unitCost=builder.unitCost;
         this.subTotal=builder.subTotal;
@@ -53,11 +56,11 @@ public class OrderDetails implements Serializable
         return orderDetailID;
     }
 
-    public Product getProductID() {
+    public int getProductID() {
         return productID;
     }
 
-    public Product getProductName() {
+    public String getProductName() {
         return productName;
     }
 
@@ -102,7 +105,8 @@ public class OrderDetails implements Serializable
     public static class Builder{
 
         private int orderDetailID;
-        private Product productID,productName;
+        private int productID;
+        private String productName;
         private int quantity;
         private String unitCost;
         private String subTotal;
@@ -112,12 +116,12 @@ public class OrderDetails implements Serializable
             return this;
         }
 
-        public Builder setProductID(Product productID) {
+        public Builder setProductID(int productID) {
             this.productID = productID;
             return this;
         }
 
-        public Builder setProductName(Product productName) {
+        public Builder setProductName(String productName) {
             this.productName = productName;
             return this;
         }
