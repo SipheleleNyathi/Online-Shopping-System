@@ -32,6 +32,7 @@ class OrderDetailsFactoryTest
 
         //Product product = ProductFactory.createProduct("Rice","EC","R123");
 
+        //I changed,ProductID and ProductName
         OrderDetails orderDetails=OrderDetailsFactory.createOrderDetails(
                 Integer.parseInt("5"), "R78","R78", Integer.parseInt("1"), Integer.parseInt("1"),"Rice");
         System.out.println(orderDetails.toString());

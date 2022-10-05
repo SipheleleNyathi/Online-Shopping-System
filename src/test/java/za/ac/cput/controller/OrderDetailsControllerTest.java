@@ -37,14 +37,14 @@ class OrderDetailsControllerTest {
     @Autowired private TestRestTemplate restTemplate;
 
     private OrderDetails order;
-    private Product product;
+    //private Product product;
     private String baseUrl;
 
     @BeforeEach
     void setUp() {
         assertNotNull(controller);
 
-        this.product = ProductFactory.createProduct("rice","R","R12");
+        //this.product = ProductFactory.createProduct("rice","R","R12");
 
         this.order = OrderDetailsFactory.createOrderDetails(Integer.parseInt("1"),"R12","R12",Integer.parseInt("1")
         , Integer.parseInt("1"),"Rice");

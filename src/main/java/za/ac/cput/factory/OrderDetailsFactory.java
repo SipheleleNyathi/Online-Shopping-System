@@ -22,7 +22,7 @@ public class OrderDetailsFactory
                 || GenericHelper.isNullorEmpty(subTotal) )
             return null;
 
-        //
+        ////I changed,ProductID and ProductName
         return new OrderDetails.Builder()
                 .setOrderDetailID(String.valueOf(orderDetailID))
                 .setProductID(productID)

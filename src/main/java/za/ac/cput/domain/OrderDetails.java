@@ -23,7 +23,7 @@ public class OrderDetails implements Serializable
     @Id
     private int orderDetailID;
 
-    //I changed, instead of using attributes from products table I made my own
+    //I changed,ProductID and ProductName
     @NotNull
     private int productID;
 
