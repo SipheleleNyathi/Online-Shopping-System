@@ -8,8 +8,7 @@ package za.ac.cput.domain;
  Changes Date:3 August 2022
 */
 
-import javax.persistence.Embedded;
-import javax.persistence.EmbeddedId;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
@@ -23,7 +22,7 @@ public class OrderDetails implements Serializable
     @Id
     private int orderDetailID;
 
-   
+
     @NotNull
     private int productID;
 

@@ -17,9 +17,9 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import za.ac.cput.domain.OrderDetails;
-import za.ac.cput.domain.Product;
+
 import za.ac.cput.factory.OrderDetailsFactory;
-import za.ac.cput.factory.ProductFactory;
+
 import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 

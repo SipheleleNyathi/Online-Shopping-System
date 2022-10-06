@@ -10,9 +10,8 @@ package za.ac.cput.factory;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import za.ac.cput.domain.Order;
+
 import za.ac.cput.domain.OrderDetails;
-import za.ac.cput.domain.Product;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;

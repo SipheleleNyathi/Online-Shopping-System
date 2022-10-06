@@ -7,9 +7,8 @@ package za.ac.cput.factory;
  Changes Date:3 August 2022
 */
 
-import za.ac.cput.domain.Order;
+
 import za.ac.cput.domain.OrderDetails;
-import za.ac.cput.domain.Product;
 import za.ac.cput.util.GenericHelper;
 
 
