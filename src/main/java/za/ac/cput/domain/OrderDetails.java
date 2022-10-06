@@ -23,7 +23,7 @@ public class OrderDetails implements Serializable
     @Id
     private int orderDetailID;
 
-    //I changed,ProductID and ProductName
+   
     @NotNull
     private int productID;
 
